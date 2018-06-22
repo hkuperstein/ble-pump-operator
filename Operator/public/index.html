@@ -5,11 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <title>BLE Pump Tool</title>
+    <link rel="stylesheet" href="%PUBLIC_URL%/index.css">
   </head>
   <body>
     <h1>BLE Pump Tool</h1/>
     <p>A tool used to operate the pump manually.</p>
     <p>Use the buttons below to turn on/off the pump.</p>
     <script src="main.js"></script>
+    <input type="button"
+    value="On"
+    onclick="connect()">
+    </p>
+    <p>
+    <input type="button"
+    value="On"
+    onclick="turnOn()">
+    </p>
+    <p>
+    <input type="button"
+    value="Off"
+    onclick="turnOff()">
+    </p>
   </body>
 </html>
