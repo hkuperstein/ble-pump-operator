@@ -11,11 +11,21 @@ function connectBLE() {
 }
 
 function turnOn() {
-  // see task.js
+  constructor() {
+    this.state = {
+      juicer = props.juicer
+    };
+
+  self.state.juicer.pump(999999);
 }
 
 function turnOff() {
+  constructor() {
+    this.state = {
+      juicer = props.juicer
+    };
 
+  self.state.juicer.pump(1);
 }
 
 // more
