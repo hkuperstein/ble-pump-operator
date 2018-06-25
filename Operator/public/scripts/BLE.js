@@ -1,6 +1,6 @@
-import Utils from './Utils';
+// import Utils from './Utils';
 
-export default class BLE {
+class BLE {
 
   constructor() {
     this.state = {
@@ -79,6 +79,9 @@ export default class BLE {
     // We are now connected; start pinging
     this.state.connected = true
     this.ping();
+
+    alert('Juicer connected');
+    console.log(connected);
   }
 
   async connect() {

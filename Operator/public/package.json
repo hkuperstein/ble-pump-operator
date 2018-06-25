@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "homepage": "localhost",
+  "dependencies": {
+    "serialport": "^5.0.0-beta3"
+  },
+  "devDependencies": {
+    "serialport": "^5.0.0-beta3"
+  },
   "description": "A tool used to manually control a BLE Nano water pump",
   "scripts": {
     "start": "react-scripts start",

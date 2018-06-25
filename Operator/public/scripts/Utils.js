@@ -89,25 +89,5 @@ class Utils {
     arr = new Uint8Array([view.getUint8(1), view.getUint8(0)])
     return arr
   }
-
-  // export trial data to a Dropbox file:
-  static exportTrial(filename, trialdata) {
-    let Dropbox = require('dropbox');
-    let token = 'KRQ60jwJHuAAAAAAAAAACnWWgJ5vQEnGcZ2JwWTAbcbVTdoCLc1rLrLOldzJMfr-'
-    let dbx = new Dropbox({accessToken: token});
-    let contents = JSON.stringify(trialdata, null, 2);
-    console.log(trialdata);
-    // let date = new Date();
-    // let month = '0' + (date.getMonth() + 1).toString();
-    // let day = '0' + date.getDate().toString()
-    // let datestring = date.getFullYear().toString()
-    //                + month.substring(month.length - 2, month.length)
-    //                + day.substring(day.length - 2, day.length);
-    dbx.filesUpload({
-      path: filename,
-      contents: contents
-    });
-  }
 }
-
-export default Utils;
+// export default Utils;
