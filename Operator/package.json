@@ -1,0 +1,20 @@
+{
+  "name": "ble-pump-operator",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "localhost",
+  "description": "A tool used to manually control a BLE Nano water pump",
+  "scripts": {
+    "start": "react-scripts start",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hkuperstein/ble-pump-operator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hkuperstein/ble-pump-operator/issues"
+  },
+  "homepage": "https://github.com/hkuperstein/ble-pump-operator#readme"
+}
