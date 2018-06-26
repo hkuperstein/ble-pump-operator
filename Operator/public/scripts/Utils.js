@@ -20,15 +20,6 @@ class Utils {
     return rnd;
   }
 
-  // HK - generate a random value between 0 and 1, positive or negative
-  // used in the randomization of the Y-intercept
-  static getRandomYInt() {
-    var random = Math.random();
-    var sign = Math.random() < 0.5 ? -1 : 1;
-    let offset = random * sign;
-    return offset;
-  }
-
   // format number to string padded with zeros:
   static padWithZeros(number, length) {
     var str = '' + number;
@@ -36,37 +27,6 @@ class Utils {
         str = '0' + str;
     }
     return str;
-  }
-
-  // HK - generates a coherence
-  // for instance, .768 moves on avg 76.8% of dots coherently
-  static getTrialCoherence() {
-    let coherenceList = [.256, .512, .768];
-    let numberOfCoherences = coherenceList.length;
-    let cohIndex = Math.floor(Math.random()*numberOfCoherences);
-    let trialCoherence = coherenceList[cohIndex];
-    return trialCoherence;
-  }
-
-  // HK - generates a direction (left or right)
-  // -1 represents right, +1 represents left
-  static getTrialDirection() {
-    let directionList = [-1, 1]
-    let numberOfDirections = directionList.length;
-    let dirIndex = Math.floor(Math.random()*numberOfDirections);
-    let trialDirection = directionList[dirIndex];
-    return trialDirection;
-  }
-
-  // function that parses arguments passed via URL:
-  static parseUrlArguments() {
-    var query = location.search.substr(1);
-    var result = {};
-    query.split("&").forEach(function(part) {
-      var item = part.split("=");
-      result[item[0]] = decodeURIComponent(item[1]);
-    });
-    return result;
   }
 
   // get a very precice time stamp since the app has been running:
