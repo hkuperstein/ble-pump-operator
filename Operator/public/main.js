@@ -17,6 +17,8 @@ function turnOn() {
   if(connected === true) {
     // longer than anyone would need to run the pump for
     juicer.pump(999999)
+  } else {
+    alert('Pump must be connected first!')
   }
 }
 
@@ -24,6 +26,8 @@ function turnOff() {
   if(connected === true) {
     // short duration, essentially turns off pump instantly
     juicer.pump(1)
+  } else {
+    alert('Pump must be connected first!')
   }
 }
 

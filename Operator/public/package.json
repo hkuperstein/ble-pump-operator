@@ -11,7 +11,7 @@
   },
   "description": "A tool used to manually control a BLE Nano water pump",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "placeholder",
   },
   "repository": {
     "type": "git",
