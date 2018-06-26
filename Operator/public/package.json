@@ -2,7 +2,7 @@
   "name": "ble-pump-operator",
   "version": "1.0.0",
   "private": true,
-  "homepage": "localhost",
+  "homepage": "https://pages.jh.edu/~hkupers1/BLEOperator/",
   "dependencies": {
     "serialport": "^5.0.0-beta3"
   },
