@@ -7,17 +7,17 @@ let juicer = []
 // creates new class BLE tied to 'juicer'
 // this connects the BLE - see BLE.js
 function connectBLE() {
-  let juicer = new BLE();
+  juicer = new BLE();
   connected = true
+  return juicer
 }
 
 // this isn't working because the above command cannot yet complete
 // need to actually connect juicer before doing futher work
 function turnOn() {
-  console.log(juicer);
-  if(connected === true) {
+  if(juicer.state.connected === true) { // connected
     // longer than anyone would need to run the pump for
-    juicer.pump(1432) // set to 1432 initially - same as trainer
+    juicer.pump(999999) // set to 1432 initially - same as trainer
   } else {
     alert('Pump must be connected first!')
     // this alert can become functional
@@ -26,12 +26,14 @@ function turnOn() {
 }
 
 function turnOff() {
-  if(connected === true) {
+  if(juicer.state.connected === true) { // connected
     // short duration, essentially turns off pump instantly
-    juicer.pump(1)
+    this.juicer.pump(1)
   } else {
     alert('Pump must be connected first!')
   }
 }
 
-// more
+function debug() {
+  alert('Version 1.0.0')
+}

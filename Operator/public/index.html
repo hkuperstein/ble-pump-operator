@@ -6,6 +6,7 @@
     <link rel="manifest" href="manifest.json">
     <title>BLE Pump Tool</title>
     <link rel="stylesheet" href="index.css">
+    <!-- Link to the javascript files used -->
     <script src="./scripts/BLE.js"></script>
     <script src="./scripts/Utils.js"></script>
     <script src="main.js"></script>
@@ -15,15 +16,11 @@
     <p>A tool used to operate the pump manually.</p>
     <p>Use the buttons below to turn on/off the pump.</p>
     <button onclick="connectBLE()">Connect</button>
-    <p>
-    <input type="button"
-    value="On"
-    onclick="turnOn()">
-    </p>
-    <p>
-    <input type="button"
-    value="Off"
-    onclick="turnOff()">
-    </p>
+    &nbsp
+    <button onclick="turnOn()">On</button>
+    &nbsp
+    <button onclick="turnOff()">Off</button>
+    &nbsp
+    <button onclick="debug()">Debug</button>
   </body>
 </html>
